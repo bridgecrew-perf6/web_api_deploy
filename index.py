@@ -3,6 +3,11 @@ from routes.index import favorite_rt,cart_rt,user_rt,category_rt,product_rt,orde
 
 
 app = FastAPI()
+
+@app.get("/")
+async def hello():
+    return{"hello":"world"}
+
 app.include_router(user_rt)
 app.include_router(category_rt)
 app.include_router(product_rt)

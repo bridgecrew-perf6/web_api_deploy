@@ -1,4 +1,3 @@
-from config.db import conn
 from schemas.index import cart,order,order_detail
 from controllers import order_controller,orderdetail_controller 
 

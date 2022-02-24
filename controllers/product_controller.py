@@ -2,7 +2,7 @@ from starlette.exceptions import HTTPException
 from controllers.stock_controller import getallstock
 from models.index import productdb,categorydb
 from config.db import conn
-from schemas.index import product,objectsearch
+from schemas.index import product
 
 def getCategory(id:int):
     getRS = conn.execute(categorydb.select().where(categorydb.c.id==id)).fetchone()

@@ -2,7 +2,6 @@ import re
 from sqlalchemy.sql.expression import false, true
 from config.db import conn
 from models.index import stockdb,accountdb
-from schemas.Product import product
 from schemas.index import stock
 from datetime import datetime
 

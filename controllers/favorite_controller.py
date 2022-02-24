@@ -1,6 +1,3 @@
-from itertools import product
-from sqlalchemy import log
-import random
 
 from sqlalchemy.sql.functions import func
 from config.db import conn
